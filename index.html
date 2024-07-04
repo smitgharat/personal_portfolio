@@ -6,17 +6,35 @@
   <link rel="stylesheet" href="style.css">
   <title>Student Portfolio - SMIT GHARAT</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
     <h1>Student Portfolio - SMIT GHARAT</h1>
+    <h2>Roll No - BT21CSE108</h2>
+    <h3>CGPA - 8.55</h3>
     <nav>
       <ul class="topic_tags">
         <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
+        <li class="dropdown">
+          <a href="#skills">Skills</a>
+          <ul class="dropdown-content">
+            <li><a href="#programming">Programming Languages</a></li>
+            <li><a href="#web-development">Web Development</a></li>
+            <li><a href="#databases">Databases</a></li>
+            <li><a href="#courses">Courses</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#projects">Projects</a>
+          <ul class="dropdown-content">
+            <li><a href="#hotel-booking">Hotel Booking Website</a></li>
+            <li><a href="#news-app">My News App</a></li>
+            <li><a href="#assignment-trees">Assignment Management - Trees</a></li>
+            <li><a href="#assignment-linked-list">Assignment Management - Linked List</a></li>
+          </ul>
+        </li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -26,11 +44,11 @@
     <h2>About</h2>
     <div class="profile">
       <div class="profile-image">
-        <img src="./SMIT.jpg" alt="Profile Picture">
+        <img src="./smit.png" alt="Profile Picture">
       </div>
       <div class="profile-details">
         <h3>SMIT GHARAT</h3>
-        <p>I am a dedicated and ambitious student at Visvesvaraya National Institute of Technology, Nagpur. Currently pursuing Computer Science Engineering, I have a strong academic background with a current CGPA of 8.49/10. My programming skills include languages such as C, C++, and Python. Through various projects like the Amazon Clone Website, Student Assignment Management Software Systems, and Stock Market Analysis, I have gained practical experience and developed a deeper understanding of software development. Aside from academics, I actively participate in sports activities, with achievements in Table Tennis and a passion for maintaining a well-rounded and active lifestyle. I also hold positions in events and organizations, demonstrating my commitment to personal growth and leadership. With a strong determination and a drive for excellence, I am eager to contribute to the field of computer science and embark on exciting future endeavors.</p>
+        <p>I am a dedicated and ambitious student at Visvesvaraya National Institute of Technology, Nagpur. Currently pursuing B.Tech in Computer Science & Engineering, I have a strong academic background with a current CGPA of 8.55/10. My programming skills include languages such as C, C++, Python, Java, Bash, and C#. Through various projects like the Hotel Booking Website, My News App, and Student Assignment Management Software Systems, I have gained practical experience and developed a deeper understanding of software development. Aside from academics, I actively participate in sports activities, with achievements in Table Tennis and a passion for maintaining a well-rounded and active lifestyle. I also hold positions in events and organizations, demonstrating my commitment to personal growth and leadership. With a strong determination and a drive for excellence, I am eager to contribute to the field of computer science and embark on exciting future endeavors.</p>
       </div>
     </div>
   </section>
@@ -38,80 +56,84 @@
   <section id="skills">
     <h2>Skills</h2>
     <div class="skills-grid">
-      <div class="skill">
+      <div class="skill" id="programming">
         <h3>Programming Languages</h3>
         <ul>
           <li>C</li>
           <li>C++</li>
           <li>Python</li>
+          <li>Java</li>
+          <li>Bash</li>
+          <li>C#</li>
         </ul>
       </div>
-      
-      <div class="skill">
+      <div class="skill" id="web-development">
         <h3>Web Development</h3>
         <ul>
+          <li>React</li>
+          <li>Node.js</li>
+          <li>Express.js</li>
+          <li>JavaScript</li>
           <li>HTML</li>
           <li>CSS</li>
-          <li>JavaScript</li>
         </ul>
       </div>
-      <div class="skill">
+      <div class="skill" id="databases">
+        <h3>Databases</h3>
+        <ul>
+          <li>Postgres</li>
+          <li>MongoDB</li>
+          <li>SSMS</li>
+        </ul>
+      </div>
+      <div class="skill" id="courses">
         <h3>Courses</h3>
         <ul>
-          <li>Data Structure and Algorithms</li>
-          <li>Introduction to Object Oriented Programming (OOPS)</li>
-          <li>CPL</li>
+          <li>Data Structures and Algorithms (DSA)</li>
+          <li>Object-Oriented Programming (OOPS)</li>
+          <li>Database Management Systems (DBMS)</li>
+          <li>Operating Systems (OS)</li>
+          <li>Computer Networks (CN)</li>
+          <li>Image Processing</li>
         </ul>
       </div>
     </div>
   </section>
 
   <section id="projects">
-    <h2>Projects/Activities</h2>
-    <div class="project">
-      <h3>Amazon Clone Website</h3>
-      <p>
-        Synopsis: The Amazon Clone Website is my inaugural web development project, showcasing my skills in HTML, CSS, and fundamental JavaScript. It offers a comprehensive replication of the renowned Amazon.in home page, providing users with a detailed and immersive experience. The website encompasses a multitude of interactive elements, including buttons, icons, and an enticing image slider that adds a touch of realism. Through meticulous attention to detail, I aimed to recreate the user-friendly interface and captivating design that Amazon.in is known for.
-      </p>
-      <p class="dates"> Date Completed: 8 July, 2023
-      </p>
-      <a class="github_link dates" href="https://smitgharat.github.io/amazon_clone_website/">Github link to amazon_clone_website</a>           
-    
+    <h2>Projects</h2>
+    <div class="project" id="hotel-booking">
+      <h3>Hotel Booking Website</h3>
+      <p>Developed a comprehensive hotel booking website using the MERN stack. Implemented authentication and authorization, providing distinct views and functionalities for clients and admins. Features include booking management, user registration, and real-time updates, ensuring a seamless user experience.</p>
+      <p class="dates">Date Completed: June 2024</p>
+      <a class="github_link dates" href="https://github.com/smitgharat/hotel1">Github link</a> |
+      <a class="website_link dates" href="https://hotel1-lime.vercel.app/">Website link</a>
     </div>
-    <div class="project">
+    <div class="project" id="news-app">
+      <h3>My News App</h3>
+      <p>Developed "My News App" using Flutter, integrating an API to fetch and display real-time news with filtering options for various categories. Implemented a user-friendly interface, allowing users to easily navigate through the latest news articles and stay informed on current events.</p>
+      <p class="dates">Date Completed: January 2024</p>
+    </div>
+    <div class="project" id="assignment-trees">
       <h3>Student Assignment Management Software System - Trees</h3>
-      <p>
-        Synopsis: The Student Assignment Management Software System was developed in 20 days using the C programming language, with a focus on using B-trees as the data structure. The system is designed as a menu-driven program that serves as an interface between students and teachers. Students can form groups of two and upload their assignments. Teachers can use the system to check if all students have submitted a particular assignment, view students' status regarding a specific assignment, evaluate assignments, update marks, and display ordered lists based on marks. Additionally, the system provides features such as range traversal and includes file handling capabilities.
-      </p>
-      <p class="dates">Date Completed: April, 2023</p>
-      <a class="github_link dates" href="https://github.com/smitgharat/Student_Assignment_Management_Software_System-Trees">Github link to Student Assignment Management Software System - Trees project</a>
+      <p>The Student Assignment Management Software System was developed in 20 days using the C programming language, with a focus on using B-trees as the data structure. The system is designed as a menu-driven program that serves as an interface between students and teachers. Students can form groups of two and upload their assignments. Teachers can use the system to check if all students have submitted a particular assignment, view students' status regarding a specific assignment, evaluate assignments, update marks, and display ordered lists based on marks. Additionally, the system provides features such as range traversal and includes file handling capabilities.</p>
+      <p class="dates">Date Completed: April 2023</p>
+      <a class="github_link dates" href="https://github.com/smitgharat/Student_Assignment_Management_Software_System-Trees">Github link</a>
     </div>
-    <div class="project">
+    <div class="project" id="assignment-linked-list">
       <h3>Student Assignment Management Software System - Linked List</h3>
-      <p>
-        Synopsis: The Student Assignment Management Software System was developed in 15 days using the C programming language, utilizing linked lists as the data structure. It is a menu-driven program serving as an interface between students and teachers. Students form groups of two and can upload their assignments. Teachers can use the system to check if a specific assignment has been submitted by all students, view student status for a particular assignment, evaluate assignments, update marks, and display ordered lists based on marks. The system also includes file handling capabilities.
-      </p>
-      <p class="dates">Date Completed: March, 2023</p>
-      <a class="github_link dates" href="https://github.com/smitgharat/Student_Assignment_Management_Software_System-Linked_List">Github link to Student Assignment Management Software System - Linked List project</a>
+      <p>The Student Assignment Management Software System was developed in 15 days using the C programming language, utilizing linked lists as the data structure. It is a menu-driven program serving as an interface between students and teachers. Students form groups of two and can upload their assignments. Teachers can use the system to check if a specific assignment has been submitted by all students, view student status for a particular assignment, evaluate assignments, update marks, and display ordered lists based on marks. The system also includes file handling capabilities.</p>
+      <p class="dates">Date Completed: March 2023</p>
+      <a class="github_link dates" href="https://github.com/smitgharat/Student_Assignment_Management_Software_System-Linked_List">Github link</a>
     </div>
-    <div class="project">
-      <h3>Stock Market Analysis</h3>
-      <p>
-        Synopsis: The Stock Market Analysis project was completed in one month using the C programming language and focused on arrays and file handling. The project aimed to analyze historical stock market data using various data analysis techniques and algorithms to identify trends and patterns. The project successfully provided valuable insights into the stock market.
-      </p>
-      <p class="dates">Date Completed: December, 2022</p>
-      <a class="github_link dates" href="https://github.com/smitgharat/Stock_Market_Analysis">Github link to Stock Market Analysis project</a>
-    </div>
-
-    
   </section>
 
   <footer>
     <section id="contact">
       <h2>Contact</h2>
       <p>Feel free to reach out to me using the following contact details:</p>
-      <p>Email: smitgharat369@gmail.com / bt21cse108@students.vnit.ac.in</p>
-      <p>Mobile No.: 9022878694</p>
+      <p>Email: <a href="mailto:smitgharat369@gmail.com">smitgharat369@gmail.com</a> | <a href="mailto:bt21cse108@students.vnit.ac.in">bt21cse108@students.vnit.ac.in</a></p>
+      <p>Mobile No.: +91-9022878694</p>
     </section>
   </footer>
 </body>
